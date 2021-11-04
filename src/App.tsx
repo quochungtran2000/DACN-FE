@@ -6,7 +6,7 @@ import { GlobalStyles } from "./global";
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
 import * as Sentry from "@sentry/react";
-import { Loading } from "./components/Loading/Loading.style";
+import { Loading } from "./components/Loading/Loading";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -20,9 +20,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <Loading />
       <>
         <GlobalStyles />
-        <Loading />
         <Header
           onDarkModeClick={onToggleThemeClick}
           theme={theme}
