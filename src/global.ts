@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+     height: 50vh;
     background: ${({theme}) => theme.body};
     color: ${({ theme }) => theme.text};
     padding: 0;

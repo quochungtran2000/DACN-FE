@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
+import { BrowserRouter } from "react-router-dom";
 
 Sentry.init({
   dsn: "https://73099d35286043899d000f9650ad4621@o450219.ingest.sentry.io/6000697",
@@ -18,9 +19,11 @@ Sentry.init({
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

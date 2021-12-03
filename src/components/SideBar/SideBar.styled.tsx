@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SSideBar = styled.div`
   position: fixed;
@@ -111,8 +112,7 @@ export const SNavDesktopSocial = styled.li`
   }
 `;
 
-export const SNavItemLink = styled.a`
-  text-decoration: none;
+export const SNavItemLink = styled(Link)`
   color: ${({ theme }) => theme.text};
   display: flex;
   align-items: center;

@@ -7,12 +7,12 @@ import { ReactComponent as GithubIcon } from "../../assets/icons/github.svg";
 // import { ReactComponent as LinkedIcon } from "../../assets/icons/linked.svg";
 import { ReactComponent as MessengerIcon } from "../../assets/icons/messenger.svg";
 import { ReactComponent as SkypeIcon } from "../../assets/icons/skype.svg";
-import { ReactComponent as EmailIcon} from '../../assets/icons/email.svg'
-import { ReactComponent as ContactIcon} from '../../assets/icons/contact.svg'
-import { ReactComponent as AboutIcon} from '../../assets/icons/about.svg'
-import { ReactComponent as SignUpIcon} from '../../assets/icons/sign-up.svg'
-import { ReactComponent as SignInIcon} from '../../assets/icons/sign-in.svg'
-import { ReactComponent as JobIcon} from '../../assets/icons/job.svg'
+import { ReactComponent as EmailIcon } from "../../assets/icons/email.svg";
+import { ReactComponent as ContactIcon } from "../../assets/icons/contact.svg";
+import { ReactComponent as AboutIcon } from "../../assets/icons/about.svg";
+import { ReactComponent as SignUpIcon } from "../../assets/icons/sign-up.svg";
+import { ReactComponent as SignInIcon } from "../../assets/icons/sign-in.svg";
+import { ReactComponent as JobIcon } from "../../assets/icons/job.svg";
 import {
   SNavDesktop,
   SNavDesktopItem,
@@ -41,7 +41,7 @@ const SideBar = (props: SideBarProps) => {
     <SSideBar>
       <SNavDesktop>
         <SNavDesktopItem bold="true">
-          <SNavItemLink href="/">
+          <SNavItemLink to="/">
             <HomeIcon />
             <span>Trang Chủ</span>
           </SNavItemLink>
@@ -56,19 +56,19 @@ const SideBar = (props: SideBarProps) => {
 
           <SNavItemSubMenu open={open}>
             <SNavSubMenuItemLink>
-              <SNavItemLink href="/category1">
+              <SNavItemLink to="/category1">
                 <span>Category 1</span>
               </SNavItemLink>
             </SNavSubMenuItemLink>
 
             <SNavSubMenuItemLink>
-              <SNavItemLink href="/category2">
+              <SNavItemLink to="/category2">
                 <span>Category 2</span>
               </SNavItemLink>
             </SNavSubMenuItemLink>
 
             <SNavSubMenuItemLink>
-              <SNavItemLink href="/category3">
+              <SNavItemLink to="/category3">
                 <span>Category 3</span>
               </SNavItemLink>
             </SNavSubMenuItemLink>
@@ -76,35 +76,35 @@ const SideBar = (props: SideBarProps) => {
         </SNavDesktopItem>
 
         <SNavDesktopItem>
-          <SNavItemLink href="/">
+          <SNavItemLink to="/">
             <AboutIcon />
             <span>About</span>
           </SNavItemLink>
         </SNavDesktopItem>
 
         <SNavDesktopItem>
-          <SNavItemLink href="/">
+          <SNavItemLink to="/">
             <ContactIcon />
             <span>Contact</span>
           </SNavItemLink>
         </SNavDesktopItem>
 
         <SNavDesktopItem break={true}>
-          <SNavItemLink href="/">
+          <SNavItemLink to="/">
             <JobIcon />
             <span>Carrer</span>
           </SNavItemLink>
         </SNavDesktopItem>
 
         <SNavDesktopItem>
-          <SNavItemLink href="/">
+          <SNavItemLink to="/">
             <SignInIcon />
             <span>Sign In</span>
           </SNavItemLink>
         </SNavDesktopItem>
 
         <SNavDesktopItem>
-          <SNavItemLink href="/">
+          <SNavItemLink to="/">
             <SignUpIcon />
             <span>Sign Up</span>
           </SNavItemLink>
@@ -124,14 +124,13 @@ const SideBar = (props: SideBarProps) => {
           <a href="skype:live:.cid.6343f3ff5edc8a7e?chat">
             <SkypeIcon />
           </a>
-          {/* <a href="/">
+          {/* <a to="/">
             <LinkedIcon />
           </a> */}
 
           <a href="mailto:tranquochung6810@gmail.com">
             <EmailIcon />
           </a>
-          
         </SNavDesktopSocial>
       </SNavDesktop>
 
