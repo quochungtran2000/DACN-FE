@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export const SSideBar = styled.div`
   position: fixed;
-  top: 0;
+  top: 60px;
   left: 0;
-  height: 100%;
-  padding: calc(60px + 15px) 0 0 0;
+  height: 100vh;
+  padding: 10px;
   transition: 0.2s linear;
   z-index: 2;
   background-color: ${({ theme }) => theme.headerColor};

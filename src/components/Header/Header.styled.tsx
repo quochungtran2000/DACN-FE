@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
 export const SHeaderWrapper = styled.header`
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   display: flex;
   width: 100%;
   height: 60px;
-  padding: 0 30px 0 25px;
   background-color: ${({ theme }) => theme.headerColor};
   color: #161617;
   z-index: 50;
   box-shadow: 0 2px 10px 0 rgb(0 0 0 / 7%);
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  padding: 0 25px;
 `;
 
 export const SHeaderLeft = styled.div`

@@ -8,6 +8,8 @@ import { SideBar } from "./components/SideBar";
 import * as Sentry from "@sentry/react";
 import { Route, Router, Switch } from "react-router";
 import { Card } from "./components/Card";
+import { Detal } from "./components/Detail";
+import Detail from "./components/Detail/Detail";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -30,8 +32,11 @@ function App() {
         ></Header>
         <SideBar>ád</SideBar>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Card />
+          </Route>
+          <Route exact path="/detail">
+            <Detal  />
           </Route>
         </Switch>
         <footer></footer>
